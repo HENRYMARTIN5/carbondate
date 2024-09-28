@@ -1,6 +1,6 @@
 import colorama
 
-from {MODULE}.globals import DEBUG
+from carbondate.globals import DEBUG
 
 if DEBUG:
     colorama.init()

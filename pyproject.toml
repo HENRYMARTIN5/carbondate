@@ -1,8 +1,8 @@
 [project]
-name = "{MODULE}"
+name = "carbondate"
 version = "0.0.1"
 authors = [
-  { name="{AUTHOR_NAME}", email="{AUTHOR_EMAIL}" },
+  { name="Henry Martin", email="henrymartin.co@outlook.com" },
 ]
 description = "A new module."
 readme = "README.md"
@@ -30,8 +30,8 @@ requires = ["setuptools>=61.0"]
 build-backend = "setuptools.build_meta"
 
 # [project.scripts]
-# {MODULE} = "{MODULE}.__main__:main"
+# carbondate = "carbondate.__main__:main"
 
 [tool.setuptools.packages.find]
-include = ["{MODULE}", "{MODULE}.*"]
+include = ["carbondate", "carbondate.*"]
 exclude = ["tests", "tests.*", "local", "local.*", "env", "env.*"]

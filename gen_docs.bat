@@ -5,10 +5,10 @@ env\Scripts\black --exclude env . --line-length 120
 echo Running isort...
 env\Scripts\isort . -s env
 echo Fixing implicit optional...
-env\Scripts\no_implicit_optional {MODULE}
+env\Scripts\no_implicit_optional carbondate
 echo Generating docs...
-env\Scripts\pdoc3 {MODULE} --html -o docs --force --template-dir docs/templates
+env\Scripts\pdoc3 carbondate --html -o docs --force --template-dir docs/templates
 echo Checking code quality...
-env\Scripts\mypy {MODULE}
-env\Scripts\radon cc {MODULE}
+env\Scripts\mypy carbondate
+env\Scripts\radon cc carbondate
 env\Scripts\pytest -lvv
